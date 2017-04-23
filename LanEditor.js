@@ -80,7 +80,7 @@ var LanEditor = {
                 "font-family": "Menlo, Monaco, Consolas, Courier New, monospace",
                 "font-weight": 1.3,
                 "outline": "none",
-                "background-color": "#23241f",
+                "background-color": "#F1F1F1",
                 "color": "#f8f8f2"
             });
         })(this.TextElem);
