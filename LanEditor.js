@@ -80,8 +80,8 @@ var LanEditor = {
                 "font-family": "Menlo, Monaco, Consolas, Courier New, monospace",
                 "font-weight": 1.3,
                 "outline": "none",
-                "background-color": "#F1F1F1",
-                "color": "#f8f8f2"
+                "background-color": "#F2F8FF",
+                "color": "##333333"
             });
         })(this.TextElem);
         //注册监听

@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="LanEditor.css">
 	<link rel="stylesheet" type="text/css" href="highlight/styles/monokai_sublime.css">
 	<script type="text/javascript" src="./jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="LanEditor.min.js"></script>
+	<script type="text/javascript" src="LanEditor.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			var lan = LanEditor.init({
@@ -51,7 +51,7 @@
 		    width: 49%;
 		    height: 100%;
 		    left: 0px;
-		    top: 0px;
+		    top: 50px;
 		    border-right: 1px dashed #666;
 		    padding: 5px;
 		    overflow: hidden;
@@ -71,7 +71,7 @@
 		    height: 100%;
 		    overflow: auto;
 		    right: 0px;
-		    top: 0px;
+		    top: 50px;
 		    padding: 5px;
 		    font-size: 14px;
 		    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -85,17 +85,7 @@
   margin: 0;
 }
 
-.page-header h1 {
-  display: block;
-  width: 160px;
-  height: 40px;
-  background-image: url("/static/logo-white.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-indent: -2016px;
-  overflow: hidden;
-  margin: 12px 0;
-}
+
 
 .page-header nav {
   display: block;
@@ -159,14 +149,19 @@
 </head>
 <body>
 
-<div style="margin-bottom:40px;">
-	
 
+<div>
+<div>
+<header  style="height:50px;" class="page-header">
+    <section class="inner-wrapper">
+      <nav>
+        <ul>
+          <li><a class="active" href="http://www.phper8.com">php吧主站</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
 </div>
-<br>
-<br>
-
-
 
 <div id="edit">
 <textarea id="editor" name="editor">
@@ -196,23 +191,13 @@
 
 只要你的浏览器是现代的，且不那么古老，一般都可以很好的工作。
 
-1. ####代码提示
-
- * LanEditor默认内置了HTML、CSS、JavaScript语言的代码提示。
- 
- * 在英文状态下输入字符，LanEditor将会快速的查找语法库，并将匹配的结果集以提示框的形式出现。
- 
- * 如果未找到匹配的结果，它什么也不会做。
- 
- * 在出现提示框后，你可以使用```上下方向键```来选择项，按下```回车```将会自动帮你补全被选择的项。
-
-2. ####符号补全和缩进
+1. ####符号补全和缩进
 
  * LanEditor会自动把你补全可以成对出现的符号、单引号、双引号。
  * 你只需输入一个左括号，它会自动帮你把右括号补全，并且将光标定位在括号中间。
  * LanEditor会自动帮你在新行缩进，缩进量和上一行相同。
  
-3. ####代码高亮
+2. ####代码高亮
 
 使用
 
@@ -243,6 +228,7 @@
 </textarea>
 </div>
 	<div id="show"></div>
-	
+
+	<div>
 </body>
 </html>
